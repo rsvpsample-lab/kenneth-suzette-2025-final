@@ -10,7 +10,7 @@ const EntourageSection = () => {
     { name: "Mr. Prince June Abarintos" },
     { name: "Mrs. Ericka Bianca Abarintos" },
     { name: "Mr. Ming-Hao Chen" },
-    { name: "Mrs. Teodelea Chen" },
+    { name: "Mrs. Teodelfa Chen" },
     { name: "Mr. Richard Paz" },
     { name: "Mrs. Victoria Paz" },
     { name: "Mr. Rolando Gonzales" },
@@ -59,7 +59,7 @@ const EntourageSection = () => {
   const bibleBearer = { name: "Kharle Hamrie N. Magsino" };
 
   const flowerGirls = [
-    { name: "Maitaniah Gwayne P. Napa" },
+    { name: "Mattaniah Gwayne P. Napa" },
     { name: "Khexia Maccu C. Bagon" },
     { name: "Cailley Isabel E. Contreras" }
   ];
