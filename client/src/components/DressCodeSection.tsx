@@ -67,7 +67,7 @@ const DressCodeSection = () => {
                     <div className="text-center px-4">
                       <p className="text-base font-semibold text-foreground mb-2">Formal Attire</p>
                       <p className="text-sm text-foreground mb-3">
-                        <strong>Men:</strong> Coat, Slacks, Long sleeves and Neck tie<br/>
+                        <strong>Men:</strong> Coat, Slacks, Long sleeves, and Neck tie<br/>
                         <strong>Women:</strong> Evening Gown / Tailored Suits
                       </p>
                     </div>
