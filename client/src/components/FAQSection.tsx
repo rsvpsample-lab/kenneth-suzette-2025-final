@@ -17,12 +17,12 @@ const FAQSection = () => {
     {
       question: "How do I confirm my attendance in your wedding?",
       icon: MessageCircle,
-      answer: "Please confirm your attendance using the contact information provided in the RSVP section above. We kindly ask that all guests RSVP by November 25 so we can plan everything perfectly!"
+      answer: "Simply click the RSVP button above, search for your name in the invitation list, and confirm your attendance! We kindly ask that all guests RSVP by the deadline so we can plan everything perfectly for our special day."
     },
     {
       question: "I RSVP-ed but have a change of plans. What should I do?",
       icon: MessageCircle,
-      answer: "Change of heart or schedule? No worries! Please contact us using the information in the RSVP section. If you've already declined but are now able to join, we'll check if there's still space for you to celebrate with us!"
+      answer: "No worries, we understand that plans can change! If the RSVP deadline hasn't passed yet, you can simply search for your invitation name in the RSVP section and update your response. However, if the deadline has already passed, please message us privately and we'll check if there are still available seats for you to join us!"
     },
     {
       question: "Can I bring someone with me?",
