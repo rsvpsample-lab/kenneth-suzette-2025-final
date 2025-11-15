@@ -77,10 +77,9 @@ const EntourageSection = () => {
         <div className="absolute top-0 right-0 w-96 h-96 border border-primary/30 rounded-full transform translate-x-1/3 -translate-y-1/3"></div>
         <div className="absolute bottom-0 left-0 w-96 h-96 border border-primary/30 rounded-full transform -translate-x-1/3 translate-y-1/3"></div>
       </div>
-
       <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
         <motion.h2 
-          className="text-5xl md:text-6xl lg:text-7xl font-display italic text-gray-700 mb-12 md:mb-16"
+          className="text-5xl md:text-6xl lg:text-7xl font-display italic mb-12 md:mb-16 text-[#483828]"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 8.5 }}
