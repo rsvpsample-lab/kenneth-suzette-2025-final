@@ -2,93 +2,63 @@
 import { motion } from 'framer-motion';
 
 const EntourageSection = () => {
-  const entourageGroups = [
-    {
-      title: "Principal Sponsors",
-      members: [
-        { name: "Mr. Uthai Wongkan" },
-        { name: "Mrs. Anastacia Wongkan" },
-        { name: "Mr. Alexander Gomez" },
-        { name: "Mrs. Mergie Gomez" },
-        { name: "Mr. Prince June Abarintos" },
-        { name: "Mrs. Ericka Bianca Abarintos" },
-        { name: "Mr. Ming-Hao Chen" },
-        { name: "Mrs. Teodelea Chen" },
-        { name: "Mr. Richard Paz" },
-        { name: "Mrs. Victoria Paz" },
-        { name: "Mr. Rolando Gonzales" },
-        { name: "Mrs. Leilanie B. Gonzales" },
-        { name: "Mr. Hereberto E. Caringal" },
-        { name: "Mrs. Prescila A. Caringal" },
-        { name: "Mr. Gilbert C. Marquez" },
-        { name: "Mrs. Emerita R. Marquez" },
-        { name: "Mr. Aldwen Reyes" },
-        { name: "Ms. Catalina D. Napa" }
-      ]
-    },
-    {
-      title: "Best Man",
-      members: [{ name: "Mr. Henson A. Contreras" }]
-    },
-    {
-      title: "Maid of Honor",
-      members: [{ name: "Ms. Suzette I. Napa" }]
-    },
-    {
-      title: "Groomsmen",
-      members: [
-        { name: "Mr. Franzer Gomez" },
-        { name: "Mr. Juffre Russel C. Collado" }
-      ]
-    },
-    {
-      title: "Bridesmaids",
-      members: [
-        { name: "Ms. Angela Yvette N. Paz" },
-        { name: "Ms. Armel Emmanuelle R. Giman" }
-      ]
-    },
-    {
-      title: "Candle",
-      members: [
-        { name: "Mr. Leomarl Uzziel D. Adem" },
-        { name: "Ms. Maerilene Joy O. Macaraig" }
-      ]
-    },
-    {
-      title: "Cord",
-      members: [
-        { name: "Mr. Nathan I. Wongkan" },
-        { name: "Ms. Ritchel Marie A. Caringal" }
-      ]
-    },
-    {
-      title: "Veil",
-      members: [
-        { name: "Mr. Kin Amiel Rosales" },
-        { name: "Ms. Blessed Anne R. Marquez" }
-      ]
-    },
-    {
-      title: "Bible Bearer",
-      members: [{ name: "Kharle Hamrie N. Magsino" }]
-    },
-    {
-      title: "Coin Bearer",
-      members: [{ name: "Arius Kurt Elque D. Cuerdo" }]
-    },
-    {
-      title: "Ring Bearer",
-      members: [{ name: "Dan Cody A. Beron" }]
-    },
-    {
-      title: "Flower Girls",
-      members: [
-        { name: "Maitaniah Gwayne P. Napa" },
-        { name: "Khexia Maccu C. Bagon" },
-        { name: "Cailley Isabel E. Contreras" }
-      ]
-    }
+  const principalSponsors = [
+    { name: "Mr. Uthai Wongkan" },
+    { name: "Mrs. Anastacia Wongkan" },
+    { name: "Mr. Alexander Gomez" },
+    { name: "Mrs. Mergie Gomez" },
+    { name: "Mr. Prince June Abarintos" },
+    { name: "Mrs. Ericka Bianca Abarintos" },
+    { name: "Mr. Ming-Hao Chen" },
+    { name: "Mrs. Teodelea Chen" },
+    { name: "Mr. Richard Paz" },
+    { name: "Mrs. Victoria Paz" },
+    { name: "Mr. Rolando Gonzales" },
+    { name: "Mrs. Leilanie B. Gonzales" },
+    { name: "Mr. Hereberto E. Caringal" },
+    { name: "Mrs. Prescila A. Caringal" },
+    { name: "Mr. Gilbert C. Marquez" },
+    { name: "Mrs. Emerita R. Marquez" },
+    { name: "Mr. Aldwen Reyes" },
+    { name: "Ms. Catalina D. Napa" }
+  ];
+
+  const secondarySponsors = {
+    candle: [
+      { name: "Mr. Leomarl Uzziel D. Adem" },
+      { name: "Ms. Maerilene Joy O. Macaraig" }
+    ],
+    veil: [
+      { name: "Mr. Kin Amiel Rosales" },
+      { name: "Ms. Blessed Anne R. Marquez" }
+    ],
+    cord: [
+      { name: "Mr. Nathan I. Wongkan" },
+      { name: "Ms. Ritchel Marie A. Caringal" }
+    ]
+  };
+
+  const bestMan = { name: "Mr. Henson A. Contreras" };
+  const maidOfHonor = { name: "Ms. Suzette I. Napa" };
+
+  const groomsmen = [
+    { name: "Mr. Franzer Gomez" },
+    { name: "Mr. Juffre Russel C. Collado" }
+  ];
+
+  const bridesmaids = [
+    { name: "Ms. Angela Yvette N. Paz" },
+    { name: "Ms. Armel Emmanuelle R. Giman" }
+  ];
+
+  const ringBearer = { name: "Dan Cody A. Beron" };
+  const coinBearer = { name: "Arius Kurt Elque D. Cuerdo" };
+  const bibleBearer = { name: "Kharle Hamrie N. Magsino" };
+
+  const flowerGirls = [
+    { name: "Maitaniah Gwayne P. Napa" },
+    { name: "Khexia Maccu C. Bagon" },
+    { name: "Cailley Isabel E. Contreras" }
   ];
 
   return (
@@ -105,53 +75,146 @@ const EntourageSection = () => {
         <div className="absolute bottom-0 left-0 w-96 h-96 border border-primary/30 rounded-full transform -translate-x-1/3 translate-y-1/3"></div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 text-center relative z-10">
+      <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
         <motion.h2 
-          className="text-4xl md:text-5xl lg:text-6xl font-display font-light text-gold-bright mb-6 md:mb-8"
+          className="text-5xl md:text-6xl lg:text-7xl font-display italic text-gray-700 mb-12 md:mb-16"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 8.5 }}
+          style={{ fontFamily: 'Playfair Display, serif' }}
         >
           Entourage
         </motion.h2>
 
+        {/* Principal Sponsors */}
         <motion.div
-          className="mb-12 md:mb-16"
+          className="mb-12"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 8.6 }}
+        >
+          <h3 className="text-sm md:text-base tracking-widest uppercase text-gray-600 mb-6">
+            Principal Sponsors
+          </h3>
+          <div className="grid grid-cols-2 gap-x-4 md:gap-x-12 gap-y-1 max-w-3xl mx-auto">
+            {principalSponsors.map((sponsor, idx) => (
+              <p key={idx} className="text-xs md:text-sm text-gray-600 uppercase tracking-wide" data-testid={`text-sponsor-${idx}`}>
+                {sponsor.name}
+              </p>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* Best Man & Maid of Honor */}
+        <motion.div
+          className="grid grid-cols-2 gap-8 md:gap-16 mb-8 max-w-2xl mx-auto"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 8.7 }}
         >
-          <blockquote className="max-w-3xl mx-auto">
-            <p className="text-lg md:text-xl italic text-foreground/80 mb-2">
-              "Therefore what God has joined together, let no one separate."
-            </p>
-            <cite className="text-sm md:text-base not-italic text-foreground/60">— Mark 10:9</cite>
-          </blockquote>
+          <div data-testid="section-best-man">
+            <h3 className="text-sm md:text-base tracking-widest uppercase text-gray-600 mb-3">Best Man</h3>
+            <p className="text-xs md:text-sm text-gray-600 uppercase tracking-wide" data-testid="text-best-man">{bestMan.name}</p>
+          </div>
+          <div data-testid="section-maid-honor">
+            <h3 className="text-sm md:text-base tracking-widest uppercase text-gray-600 mb-3">Maid of Honor</h3>
+            <p className="text-xs md:text-sm text-gray-600 uppercase tracking-wide" data-testid="text-maid-honor">{maidOfHonor.name}</p>
+          </div>
         </motion.div>
 
-        {/* Entourage List */}
-        <div className="grid md:grid-cols-2 gap-8 md:gap-12 max-w-5xl mx-auto">
-          {entourageGroups.map((group, index) => (
-            <motion.div
-              key={group.title}
-              className="bg-white/50 backdrop-blur-sm rounded-lg p-6 md:p-8 shadow-md border border-primary/10"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, ease: "easeOut", delay: 8.8 + index * 0.1 }}
-            >
-              <h3 className="text-xl md:text-2xl font-display text-primary mb-6 pb-3 border-b border-primary/20">
-                {group.title}
-              </h3>
-              <div className="space-y-3">
-                {group.members.map((member, idx) => (
-                  <p key={idx} className="text-base md:text-lg font-body text-foreground leading-relaxed">
-                    {member.name}
-                  </p>
-                ))}
-              </div>
-            </motion.div>
+        {/* Groomsmen & Bridesmaids */}
+        <motion.div
+          className="grid grid-cols-2 gap-8 md:gap-16 mb-8 max-w-2xl mx-auto"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 8.8 }}
+        >
+          <div data-testid="section-groomsmen">
+            <h3 className="text-sm md:text-base tracking-widest uppercase text-gray-600 mb-3">Groomsmen</h3>
+            {groomsmen.map((person, idx) => (
+              <p key={idx} className="text-xs md:text-sm text-gray-600 mb-1 uppercase tracking-wide" data-testid={`text-groomsman-${idx}`}>
+                {person.name}
+              </p>
+            ))}
+          </div>
+          <div data-testid="section-bridesmaids">
+            <h3 className="text-sm md:text-base tracking-widest uppercase text-gray-600 mb-3">Bridesmaids</h3>
+            {bridesmaids.map((person, idx) => (
+              <p key={idx} className="text-xs md:text-sm text-gray-600 mb-1 uppercase tracking-wide" data-testid={`text-bridesmaid-${idx}`}>
+                {person.name}
+              </p>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* Candle, Cord, Veil */}
+        <motion.div
+          className="grid grid-cols-3 gap-4 md:gap-8 mb-8 max-w-3xl mx-auto"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 8.9 }}
+        >
+          <div data-testid="section-candle">
+            <h3 className="text-sm md:text-base tracking-widest uppercase text-gray-600 mb-3">Candle</h3>
+            {secondarySponsors.candle.map((person, idx) => (
+              <p key={idx} className="text-xs md:text-sm text-gray-600 mb-1 uppercase tracking-wide" data-testid={`text-candle-${idx}`}>
+                {person.name}
+              </p>
+            ))}
+          </div>
+          <div data-testid="section-cord">
+            <h3 className="text-sm md:text-base tracking-widest uppercase text-gray-600 mb-3">Cord</h3>
+            {secondarySponsors.cord.map((person, idx) => (
+              <p key={idx} className="text-xs md:text-sm text-gray-600 mb-1 uppercase tracking-wide" data-testid={`text-cord-${idx}`}>
+                {person.name}
+              </p>
+            ))}
+          </div>
+          <div data-testid="section-veil">
+            <h3 className="text-sm md:text-base tracking-widest uppercase text-gray-600 mb-3">Veil</h3>
+            {secondarySponsors.veil.map((person, idx) => (
+              <p key={idx} className="text-xs md:text-sm text-gray-600 mb-1 uppercase tracking-wide" data-testid={`text-veil-${idx}`}>
+                {person.name}
+              </p>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* Bible, Coin, Ring Bearers */}
+        <motion.div
+          className="grid grid-cols-3 gap-4 md:gap-8 mb-8 max-w-3xl mx-auto"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 9.0 }}
+        >
+          <div data-testid="section-bible-bearer">
+            <h3 className="text-sm md:text-base tracking-widest uppercase text-gray-600 mb-3">Bible Bearer</h3>
+            <p className="text-xs md:text-sm text-gray-600 uppercase tracking-wide" data-testid="text-bible-bearer">{bibleBearer.name}</p>
+          </div>
+          <div data-testid="section-coin-bearer">
+            <h3 className="text-sm md:text-base tracking-widest uppercase text-gray-600 mb-3">Coin Bearer</h3>
+            <p className="text-xs md:text-sm text-gray-600 uppercase tracking-wide" data-testid="text-coin-bearer">{coinBearer.name}</p>
+          </div>
+          <div data-testid="section-ring-bearer">
+            <h3 className="text-sm md:text-base tracking-widest uppercase text-gray-600 mb-3">Ring Bearer</h3>
+            <p className="text-xs md:text-sm text-gray-600 uppercase tracking-wide" data-testid="text-ring-bearer">{ringBearer.name}</p>
+          </div>
+        </motion.div>
+
+        {/* Flower Girls */}
+        <motion.div
+          className="mb-8"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 9.1 }}
+        >
+          <h3 className="text-sm md:text-base tracking-widest uppercase text-gray-600 mb-3">Flower Girls</h3>
+          {flowerGirls.map((girl, idx) => (
+            <p key={idx} className="text-xs md:text-sm text-gray-600 mb-1 uppercase tracking-wide" data-testid={`text-flower-girl-${idx}`}>
+              {girl.name}
+            </p>
           ))}
-        </div>
+        </motion.div>
       </div>
     </motion.section>
   );
