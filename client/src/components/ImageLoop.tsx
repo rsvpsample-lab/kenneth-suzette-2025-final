@@ -7,7 +7,7 @@ const ImageLoop = () => {
   const invitations = Array(20).fill("YOU'RE INVITED!");
 
   return (
-    <section id="invitation" className="section-hard-blue bg-white w-full overflow-hidden py-8">
+    <section id="image-loop" className="section-hard-blue bg-white w-full overflow-hidden py-8">
       <div className="invitation-loop-container">
         <div className={`${animationsEnabled ? 'invitation-loop-track' : 'invitation-loop-track-static'}`}>
           {/* First set */}

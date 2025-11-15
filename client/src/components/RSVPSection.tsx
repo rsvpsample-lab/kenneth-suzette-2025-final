@@ -1,7 +1,11 @@
 import { motion } from 'framer-motion';
 import ringImage from '@assets/rsvp-ring_1760518283296.png';
 
-const RSVPSection = () => {
+type RSVPSectionProps = {
+  rsvpLink: string;
+};
+
+const RSVPSection = ({ rsvpLink }: RSVPSectionProps) => {
   
   return (
     <motion.section 
@@ -75,10 +79,11 @@ const RSVPSection = () => {
                 </p>
                 <div className="text-center mb-6">
                   <a 
-                    href="https://kenneth-suzette-rsvp.replit.app" 
+                    href={rsvpLink} 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="inline-block bg-primary text-primary-foreground hover:bg-primary/90 font-semibold py-3 px-8 rounded-lg transition-colors duration-200 text-lg"
+                    data-testid="button-rsvp"
                   >
                     RSVP Now
                   </a>
