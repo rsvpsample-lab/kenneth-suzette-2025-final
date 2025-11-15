@@ -2,7 +2,7 @@
 import { motion } from 'framer-motion';
 
 const EntourageSection = () => {
-  const principalSponsors = [
+  const principalSponsorsPaired = [
     { name: "Mr. Uthai Wongkan" },
     { name: "Mrs. Anastacia Wongkan" },
     { name: "Mr. Alexander Gomez" },
@@ -18,7 +18,10 @@ const EntourageSection = () => {
     { name: "Mr. Hereberto E. Caringal" },
     { name: "Mrs. Prescila A. Caringal" },
     { name: "Mr. Gilbert C. Marquez" },
-    { name: "Mrs. Emerita R. Marquez" },
+    { name: "Mrs. Emerita R. Marquez" }
+  ];
+
+  const principalSponsorsUnpaired = [
     { name: "Mr. Aldwen Reyes" },
     { name: "Ms. Catalina D. Napa" }
   ];
@@ -96,9 +99,16 @@ const EntourageSection = () => {
           <h3 className="text-sm md:text-base tracking-widest uppercase text-gray-600 mb-6">
             Principal Sponsors
           </h3>
-          <div className="grid grid-cols-2 gap-x-4 md:gap-x-12 gap-y-1 max-w-3xl mx-auto">
-            {principalSponsors.map((sponsor, idx) => (
+          <div className="grid grid-cols-2 gap-x-4 md:gap-x-12 gap-y-1 max-w-3xl mx-auto mb-2">
+            {principalSponsorsPaired.map((sponsor, idx) => (
               <p key={idx} className="text-xs md:text-sm text-gray-600 uppercase tracking-wide" data-testid={`text-sponsor-${idx}`}>
+                {sponsor.name}
+              </p>
+            ))}
+          </div>
+          <div className="flex flex-col items-center gap-y-1">
+            {principalSponsorsUnpaired.map((sponsor, idx) => (
+              <p key={idx} className="text-xs md:text-sm text-gray-600 uppercase tracking-wide" data-testid={`text-sponsor-unpaired-${idx}`}>
                 {sponsor.name}
               </p>
             ))}
