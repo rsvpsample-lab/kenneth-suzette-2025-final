@@ -98,9 +98,12 @@ const VenueSection = () => {
                           </p>
                         </div>
                       {venue.title === 'Church Ceremony' && (
-                          <div className="mt-4 bg-primary/5 border border-primary/20 rounded-lg px-4 py-3">
-                            <p className="text-sm font-body text-foreground text-center italic">
-                              <span className="font-semibold">Unplugged Ceremony:</span> Please turn off all devices and be fully present with us during this sacred moment.
+                          <div className="mt-4 bg-primary/5 border border-primary/20 rounded-lg px-6 py-4">
+                            <h4 className="text-base md:text-lg font-display italic text-gold mb-3 text-center" style={{ fontFamily: 'Playfair Display, serif' }}>
+                              Unplugged Ceremony
+                            </h4>
+                            <p className="text-xs md:text-sm font-body text-foreground/80 text-center leading-relaxed">
+                              PLEASE REFRAIN FROM USING YOUR MOBILE PHONES AND CAMERAS DURING THE PROCESSIONAL AND CEREMONY. OUR AMAZING TEAM OF PHOTOGRAPHERS AND VIDEOGRAPHERS WILL CAPTURE EVERYTHING AND WE CAN'T WAIT TO SHARE THE BEAUTIFUL MEMORIES WITH YOU.
                             </p>
                           </div>
                         )}
