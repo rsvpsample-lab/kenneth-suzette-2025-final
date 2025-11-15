@@ -6,69 +6,87 @@ const EntourageSection = () => {
     {
       title: "Principal Sponsors",
       members: [
-        { name: "Mr. & Mrs. Reynaldo & Erlinda Robles" },
-        { name: "Mr. & Mrs. Benjamin & Emily Robles" },
-        { name: "Mr. & Mrs. Ronnie & Marivic Aguda" },
-        { name: "Mr. & Mrs. Rommel & Maria Teresa Enriquez" },
-        { name: "Mr. & Mrs. Sonny & Linda Cruz" },
-        { name: "Mr. & Mrs. Rodel & Lourdes Reyes" },
-        { name: "Mr. & Mrs. Edwin & Analiza Santos" },
-        { name: "Mr. & Mrs. Joel & Grace Martinez" }
+        { name: "Mr. Uthai Wongkan" },
+        { name: "Mrs. Anastacia Wongkan" },
+        { name: "Mr. Alexander Gomez" },
+        { name: "Mrs. Mergie Gomez" },
+        { name: "Mr. Prince June Abarintos" },
+        { name: "Mrs. Ericka Bianca Abarintos" },
+        { name: "Mr. Ming-Hao Chen" },
+        { name: "Mrs. Teodelea Chen" },
+        { name: "Mr. Richard Paz" },
+        { name: "Mrs. Victoria Paz" },
+        { name: "Mr. Rolando Gonzales" },
+        { name: "Mrs. Leilanie B. Gonzales" },
+        { name: "Mr. Hereberto E. Caringal" },
+        { name: "Mrs. Prescila A. Caringal" },
+        { name: "Mr. Gilbert C. Marquez" },
+        { name: "Mrs. Emerita R. Marquez" },
+        { name: "Mr. Aldwen Reyes" },
+        { name: "Ms. Catalina D. Napa" }
       ]
     },
     {
       title: "Best Man",
-      members: [{ name: "Engr. Reymark Robles" }]
+      members: [{ name: "Mr. Henson A. Contreras" }]
     },
     {
       title: "Maid of Honor",
-      members: [{ name: "Ms. Princess Suzette Enriquez" }]
+      members: [{ name: "Ms. Suzette I. Napa" }]
     },
     {
       title: "Groomsmen",
       members: [
-        { name: "Mr. John Michael Santos" },
-        { name: "Mr. Christian Reyes" },
-        { name: "Mr. Joshua Cruz" },
-        { name: "Mr. Mark Anthony Martinez" }
+        { name: "Mr. Franzer Gomez" },
+        { name: "Mr. Juffre Russel C. Collado" }
       ]
     },
     {
       title: "Bridesmaids",
       members: [
-        { name: "Ms. Mary Grace Aguda" },
-        { name: "Ms. Angela Marie Santos" },
-        { name: "Ms. Patricia Anne Reyes" },
-        { name: "Ms. Kristine Joy Cruz" }
+        { name: "Ms. Angela Yvette N. Paz" },
+        { name: "Ms. Armel Emmanuelle R. Giman" }
       ]
     },
     {
-      title: "Coin & Veil Sponsors",
+      title: "Candle",
       members: [
-        { name: "Mr. & Mrs. Roberto & Carmen Dela Cruz" }
+        { name: "Mr. Leomarl Uzziel D. Adem" },
+        { name: "Ms. Maerilene Joy O. Macaraig" }
       ]
     },
     {
-      title: "Cord Sponsors",
+      title: "Cord",
       members: [
-        { name: "Mr. & Mrs. Manuel & Rosario Gonzales" }
+        { name: "Mr. Nathan I. Wongkan" },
+        { name: "Ms. Ritchel Marie A. Caringal" }
       ]
     },
     {
-      title: "Candle Sponsors",
+      title: "Veil",
       members: [
-        { name: "Mr. & Mrs. Antonio & Maria Fernandez" }
+        { name: "Mr. Kin Amiel Rosales" },
+        { name: "Ms. Blessed Anne R. Marquez" }
       ]
+    },
+    {
+      title: "Bible Bearer",
+      members: [{ name: "Kharle Hamrie N. Magsino" }]
+    },
+    {
+      title: "Coin Bearer",
+      members: [{ name: "Arius Kurt Elque D. Cuerdo" }]
     },
     {
       title: "Ring Bearer",
-      members: [{ name: "Baby Ethan James Robles" }]
+      members: [{ name: "Dan Cody A. Beron" }]
     },
     {
       title: "Flower Girls",
       members: [
-        { name: "Baby Sophia Marie Santos" },
-        { name: "Baby Isabella Grace Cruz" }
+        { name: "Maitaniah Gwayne P. Napa" },
+        { name: "Khexia Maccu C. Bagon" },
+        { name: "Cailley Isabel E. Contreras" }
       ]
     }
   ];
