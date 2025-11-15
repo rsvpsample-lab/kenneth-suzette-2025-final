@@ -116,17 +116,17 @@ const EntourageSection = () => {
           {entourageGroups.map((group, index) => (
             <motion.div
               key={group.title}
-              className="bg-white/50 backdrop-blur-sm rounded-lg p-6 shadow-md border border-primary/10"
+              className="bg-white/50 backdrop-blur-sm rounded-lg p-6 md:p-8 shadow-md border border-primary/10"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: "easeOut", delay: 8.8 + index * 0.1 }}
             >
-              <h3 className="text-xl md:text-2xl font-display text-primary mb-4">
+              <h3 className="text-xl md:text-2xl font-display text-primary mb-6 pb-3 border-b border-primary/20">
                 {group.title}
               </h3>
-              <div className="space-y-2">
+              <div className="space-y-3">
                 {group.members.map((member, idx) => (
-                  <p key={idx} className="text-sm md:text-base font-body text-foreground/80">
+                  <p key={idx} className="text-base md:text-lg font-body text-foreground leading-relaxed">
                     {member.name}
                   </p>
                 ))}
