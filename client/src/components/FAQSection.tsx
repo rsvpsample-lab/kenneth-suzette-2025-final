@@ -157,7 +157,7 @@ const FAQSection = () => {
                           data-testid="img-contact-profile"
                         />
                         <div className="flex-1 min-w-0">
-                          <h4 className="font-body font-semibold text-lg text-foreground mb-2" data-testid="text-contact-name">
+                          <h4 className="font-sans font-semibold text-lg text-foreground mb-2" data-testid="text-contact-name" style={{ fontFamily: 'Arial, sans-serif' }}>
                             {faq.contactInfo.name}
                           </h4>
                           <div className="space-y-1">
