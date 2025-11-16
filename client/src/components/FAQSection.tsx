@@ -1,6 +1,21 @@
 import { useState } from 'react';
-import { ChevronDown, ChevronUp, Camera, Clock, Users, MessageCircle, MapPin, Hotel } from 'lucide-react';
+import { ChevronDown, ChevronUp, Camera, Clock, Users, MessageCircle, MapPin, Hotel, Phone } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { SiMessenger } from 'react-icons/si';
+
+interface ContactInfo {
+  name: string;
+  phone: string;
+  messenger: string;
+  profilePic: string;
+}
+
+interface FAQ {
+  question: string;
+  icon: typeof MessageCircle;
+  answer: string;
+  contactInfo?: ContactInfo;
+}
 
 const FAQSection = () => {
   const [openItems, setOpenItems] = useState<number[]>([]);
@@ -13,7 +28,7 @@ const FAQSection = () => {
     );
   };
 
-  const faqs = [
+  const faqs: FAQ[] = [
     {
       question: "How do I confirm my attendance in your wedding?",
       icon: MessageCircle,
@@ -22,7 +37,13 @@ const FAQSection = () => {
     {
       question: "I RSVP-ed but have a change of plans. What should I do?",
       icon: MessageCircle,
-      answer: "No worries, we understand that plans can change! If the RSVP deadline hasn't passed yet, you can simply search for your invitation name in the RSVP section and update your response. However, if the deadline has already passed, please message us privately and we'll check if there are still available seats for you to join us!"
+      answer: "No worries, we understand that plans can change! If the RSVP deadline hasn't passed yet, you can simply search for your invitation name in the RSVP section and update your response. However, if the deadline has already passed, please contact Ghem M. Albarico at 09175321252 or via Messenger (Ghem M.) and we'll check if there are still available seats for you to join us!",
+      contactInfo: {
+        name: "Ghem M. Albarico",
+        phone: "09175321252",
+        messenger: "Ghem M.",
+        profilePic: "https://res.cloudinary.com/dbpqgdqba/image/upload/v1763300996/69271288_2559557377417125_3410666364778577920_n_iztrha.jpg"
+      }
     },
     {
       question: "Can I bring someone with me?",
@@ -123,9 +144,46 @@ const FAQSection = () => {
               {openItems.includes(index) && (
                 <div className="px-8 pb-6">
                   <div className="w-full h-px bg-border mb-4"></div>
-                  <p className="text-foreground leading-relaxed">
+                  <p className="text-foreground leading-relaxed mb-4">
                     {faq.answer}
                   </p>
+                  {faq.contactInfo && (
+                    <div className="mt-6 bg-gradient-to-br from-primary/5 to-gold/5 rounded-lg p-6 border border-primary/10">
+                      <div className="flex items-center gap-4 flex-wrap">
+                        <img 
+                          src={faq.contactInfo.profilePic} 
+                          alt={faq.contactInfo.name}
+                          className="w-16 h-16 rounded-full object-cover border-2 border-primary/20"
+                          data-testid="img-contact-profile"
+                        />
+                        <div className="flex-1 min-w-0">
+                          <h4 className="font-body font-semibold text-lg text-foreground mb-2" data-testid="text-contact-name">
+                            {faq.contactInfo.name}
+                          </h4>
+                          <div className="space-y-1">
+                            <a 
+                              href={`tel:${faq.contactInfo.phone}`}
+                              className="flex items-center gap-2 text-foreground hover:text-primary transition-colors"
+                              data-testid="link-contact-phone"
+                            >
+                              <Phone className="w-4 h-4" />
+                              <span className="text-sm">{faq.contactInfo.phone}</span>
+                            </a>
+                            <a 
+                              href={`https://m.me/${faq.contactInfo.messenger.replace(' ', '')}`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="flex items-center gap-2 text-foreground hover:text-primary transition-colors"
+                              data-testid="link-contact-messenger"
+                            >
+                              <SiMessenger className="w-4 h-4" />
+                              <span className="text-sm">Messenger: {faq.contactInfo.messenger}</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  )}
                 </div>
               )}
             </motion.div>

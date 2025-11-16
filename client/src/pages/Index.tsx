@@ -46,7 +46,7 @@ const Index = () => {
         preload="auto"
         style={{ display: 'none' }}
         data-testid="background-audio"
-        src="https://res.cloudinary.com/du9mnsfoh/video/upload/v1763178261/La_Vie_En_Rose_gx1ddo.mp3"
+        src="https://res.cloudinary.com/dbpqgdqba/video/upload/v1763300902/Emily_Watts_-_La_Vie_En_Rose_Lyrics_xvrwf3.mp3"
       />
 
       <MusicConsentPopup 
