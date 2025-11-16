@@ -89,7 +89,7 @@ const RSVPSection = ({ rsvpLink }: RSVPSectionProps) => {
                   </a>
                 </div>
                 <p className="text-center">
-                  <span className="font-body md:text-lg font-bold px-3 py-1 rounded whitespace-nowrap text-[12px] text-primary-foreground bg-primary">RSVP DUE DATE: NOVEMBER 25</span>
+                  <span className="font-body md:text-lg font-bold px-3 py-1 rounded whitespace-nowrap text-[12px] text-primary-foreground bg-primary">RSVP DUE DATE: December 20</span>
                 </p>
               </div>
             </motion.div>
