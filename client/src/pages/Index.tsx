@@ -78,10 +78,10 @@ const Index = () => {
         <MemorableMomentsSection />
         <RSVPSection rsvpLink="https://kenneth-suzette-rsvp.replit.app" />
         <CoverSection
-          imageUrl="https://res.cloudinary.com/du9mnsfoh/image/upload/v1763176219/KScine-18_pjlj9k.jpg"
-          alt="Kenneth & Suzette Wedding Cover"
+          imageUrl="https://res.cloudinary.com/df2zirjvd/image/upload/v1763435989/KScine-121_xyp3sp.jpg"
+          alt="Couple Photo 3"
         />
-        <EntourageSection />
+        <EntourageSection rosaryBearer="Altair Callen C. Anoyo" />
         <FAQSection />
         <Footer />
       </main>

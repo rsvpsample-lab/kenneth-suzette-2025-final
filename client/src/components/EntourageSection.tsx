@@ -57,6 +57,7 @@ const EntourageSection = () => {
   const ringBearer = { name: "Dan Cody A. Beron" };
   const coinBearer = { name: "Arius Kurt Elque D. Cuerdo" };
   const bibleBearer = { name: "Kharle Hamrie N. Magsino" };
+  const rosaryBearer = { name: "Altair Callen C. Anoyo" };
 
   const flowerGirls = [
     { name: "Mattaniah Gwayne P. Napa" },
@@ -189,9 +190,9 @@ const EntourageSection = () => {
           </div>
         </motion.div>
 
-        {/* Bible, Coin, Ring Bearers */}
+        {/* Bible, Coin, Ring, Rosary Bearers */}
         <motion.div
-          className="grid grid-cols-3 gap-4 md:gap-8 mb-8 max-w-3xl mx-auto"
+          className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mb-8 max-w-3xl mx-auto"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 9.0 }}
@@ -207,6 +208,10 @@ const EntourageSection = () => {
           <div data-testid="section-ring-bearer">
             <h3 className="text-sm md:text-base tracking-widest uppercase text-gray-600 mb-3">Ring Bearer</h3>
             <p className="text-xs md:text-sm text-gray-600 uppercase tracking-wide" data-testid="text-ring-bearer">{ringBearer.name}</p>
+          </div>
+          <div data-testid="section-rosary-bearer">
+            <h3 className="text-sm md:text-base tracking-widest uppercase text-gray-600 mb-3">Rosary Bearer</h3>
+            <p className="text-xs md:text-sm text-gray-600 uppercase tracking-wide" data-testid="text-rosary-bearer">{rosaryBearer.name}</p>
           </div>
         </motion.div>
 
