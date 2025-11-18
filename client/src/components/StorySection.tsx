@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-const storyCoupleImage = 'https://res.cloudinary.com/du9mnsfoh/image/upload/v1763446471/KScine-121_1_y2ue9s.jpg';
+const storyCoupleImage = 'https://res.cloudinary.com/dnneaehcz/image/upload/v1763446658/KScine-121_1_v86qee.jpg';
 import { Heart } from 'lucide-react';
 
 const StorySection = () => {
