@@ -61,20 +61,17 @@ const Index = () => {
           <HeroSection audioRef={audioRef} />
         <InvitationRevealSection />
         <CountdownSection />
-        <ImageLoop 
-          churchImage="https://res.cloudinary.com/df2zirjvd/image/upload/v1763436504/582132333_724157410152143_1857255194952917378_n_ayk9hd.jpg"
-          receptionImage="https://res.cloudinary.com/df2zirjvd/image/upload/v1763435982/asd_sixfoj.jpg"
-        />
+        <ImageLoop />
         <StorySection />
         <ScrollTriggeredTimeline />
         <CoverSection
-          imageUrl="https://res.cloudinary.com/df2zirjvd/image/upload/v1763435991/KScine-161_pggktg.jpg"
-          alt="Kenneth & Suzette Wedding Polaroid"
+          imageUrl="https://res.cloudinary.com/du9mnsfoh/image/upload/v1763176221/KScine-59_cnjpqn.jpg"
+          alt="Kenneth & Suzette Wedding Cover"
         />
         <VenueSection />
         <CoverSection
-          imageUrl="https://res.cloudinary.com/df2zirjvd/image/upload/v1763435989/KScine-121_xyp3sp.jpg"
-          alt="Kenneth & Suzette Wedding Cover 3"
+          imageUrl="https://res.cloudinary.com/du9mnsfoh/image/upload/v1763176223/KScine-111_kj3cwo.jpg"
+          alt="Kenneth & Suzette Wedding Cover"
         />
         <DressCodeSection />
         <HashtagGiftsSection />
@@ -84,9 +81,7 @@ const Index = () => {
           imageUrl="https://res.cloudinary.com/du9mnsfoh/image/upload/v1763176219/KScine-18_pjlj9k.jpg"
           alt="Kenneth & Suzette Wedding Cover"
         />
-        <EntourageSection 
-          rosaryBearer="Altair Callen C. Anoyo"
-        />
+        <EntourageSection />
         <FAQSection />
         <Footer />
       </main>

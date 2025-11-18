@@ -4,7 +4,7 @@ import flowerImage from '@assets/flower_1759854441531.png';
 
 // Polaroid images
 const brideImage = 'https://res.cloudinary.com/du9mnsfoh/image/upload/v1763176223/KScine-214_kb4iho.jpg';
-const coupleImage = 'https://res.cloudinary.com/df2zirjvd/image/upload/v1763435991/KScine-161_pggktg.jpg';
+const coupleImage = 'https://res.cloudinary.com/du9mnsfoh/image/upload/v1763176254/KScine-194_nckzhs.jpg';
 const groomImage = 'https://res.cloudinary.com/du9mnsfoh/image/upload/v1763176312/KScine-218_zvu1ag.jpg';
 
 interface RusticInvitationRevealProps {
