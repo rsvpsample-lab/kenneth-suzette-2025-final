@@ -119,7 +119,8 @@ const VenueSection = () => {
                       <img
                         src={venue.image}
                         alt={venue.name}
-                        className="relative w-full h-72 md:h-96 object-cover rounded-lg shadow-xl"
+                        className="relative w-full h-72 md:h-96 rounded-lg shadow-xl"
+                        style={{ objectFit: venue.title === 'Church Ceremony' ? 'contain' : 'cover' }}
                         loading="lazy"
                         data-testid={`img-${venue.title.toLowerCase()}-venue`}
                       />
