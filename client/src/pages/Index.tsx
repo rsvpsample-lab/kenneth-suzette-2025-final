@@ -78,7 +78,7 @@ const Index = () => {
         <MemorableMomentsSection />
         <RSVPSection rsvpLink="https://kenneth-suzette-rsvp.replit.app" />
         <CoverSection
-          imageUrl="https://res.cloudinary.com/df2zirjvd/image/upload/v1763435989/KScine-121_xyp3sp.jpg"
+          imageUrl="https://res.cloudinary.com/du9mnsfoh/image/upload/v1763446454/KScine-16_1_ohq7ep.jpg"
           alt="Couple Photo 3"
         />
         <EntourageSection rosaryBearer="Altair Callen C. Anoyo" />
