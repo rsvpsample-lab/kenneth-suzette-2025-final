@@ -21,7 +21,7 @@ const VenueSection = () => {
     {
       title: 'Reception',
       name: 'The Stable Rancho Blanco Event Center',
-      address: 'Taal, Batangas',
+      address: 'Sitio 3 Balete Batangas City',
       image: 'https://res.cloudinary.com/df2zirjvd/image/upload/v1763435982/asd_sixfoj.jpg',
       mapUrl: 'https://maps.app.goo.gl/u5VH5fdEm62potfz6',
       mapEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.1401766742297!2d121.06688947485755!3d13.830620086569535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd0ff6f6291a23%3A0x94abc72f86048334!2sRancho%20Blanco%20Dates%20Farm!5e0!3m2!1sen!2sph!4v1763178405472!5m2!1sen!2sph',
